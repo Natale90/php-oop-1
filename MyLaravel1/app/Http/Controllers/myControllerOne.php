@@ -17,14 +17,14 @@ class Movie{
 
   public function __construct($title, $description = null){
 
-    $this -> title = $title;
+    $this->title = $title;
 
     if ($description == null) {
 
-      $this -> description = 'description not available';
+      $this->description = 'description not available';
     } else{
 
-      $this -> description = $description;
+      $this->description = $description;
     }
 
   }
@@ -62,4 +62,5 @@ class myControllerOne extends Controller
 
     return view('pages.home');
   }
+
 }
